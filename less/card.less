@@ -1,0 +1,82 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+@padding: 1em;
+@cardWidth: 370px;
+@imgWidth: 112px;
+
+.cardwrap {
+  font-size: 13px;
+  color: #878787;
+  width: @cardWidth;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+
+  a,div,span,h1,h2,h3,h4,h5,h6,p {
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    outline:0;
+  }
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+
+  .left, .right {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .right {
+    padding: @padding;
+  }
+
+  h1, h2 {
+    margin: @padding/2 0;
+  }
+
+  h1 {
+    font-size: 24px;
+    color: #707070;
+    font-weight: 200;
+    margin-top: 0;
+  }
+
+  .action {
+    color: #33b5e5;
+    text-decoration: none;
+  }
+
+  .section, .action {
+    border-top: 1px solid #DDDDDD;
+    display: block;
+    padding: @padding;
+
+    a {
+      color: #33b5e5;
+      text-decoration: none;
+    }
+  }
+
+  .image[src="images/none.gif"],
+  .action:empty,
+  .optional {
+    display: none;
+  }
+
+  .optional[display="true"] {
+    display: block;
+  }
+
+  .film:last-child:after {
+    content: '';
+  }
+
+  .film:after {
+    content: ',';
+  }
+}

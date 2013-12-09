@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Freebase Maps</title>
+  <link rel="stylesheet" type="text/css"
+      href="http://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+  <div class="cardwrap">
+    <div class="card">
+      <div class="left">
+        <img class="image" src="" width="112" height="112">
+      </div>
+      <div class="right">
+        <h1 class="name">
+          This is card title
+        </h1>
+        <h2 class="notableFor">Subtitle</h2>
+        <p class="description">Description</p>
+      </div>
+      <div class="section namedAfter optional">
+        Named after <a class="" href=""></a>
+      </div>
+      <div class="section films optional">
+        Featured in <a class="film" href=""></a>
+      </div>
+      <a class="action" href="">Action text</a>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div id="flash" class="info"></div>
+    <div>
+      <h1>Freebase Maps</h1>
+      <p>This map combines geolocated entities from
+        <a href="http://www.freebase.com">Freebase</a> with
+        <a href="https://developers.google.com/maps/">Maps API</a>.
+      </p>
+      <a href="/">
+        <img src="https://raw.github.com/github/media/master/octocats/blacktocat-32.png">
+      </a>
+    </div>
+  </div>
+  <div id="map-canvas"></div>
+  <select id="category">
+    <option value="all">all</option>
+    <option value="/symbols/namesake" selected="selected">namesake</option>
+    <option value="/film/film_location">film locations</option>
+    <option value="/visual_art/artwork">artwork</option>
+    <option value="/architecture/structure">structures</option>
+    <option value="/travel/tourist_attraction">tourist attraction</option>
+    <option value="/sports/sports_facility">sports facility</option>
+  </select>
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://beebole.com/pure/wp-content/themes/BeeBole-pure/libs/pure.js"></script>
+  <script src="js/freebase.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.cardwrap {
+  font-size: 13px;
+  color: #878787;
+  width: 370px;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+}
+.cardwrap a,
+.cardwrap div,
+.cardwrap span,
+.cardwrap h1,
+.cardwrap h2,
+.cardwrap h3,
+.cardwrap h4,
+.cardwrap h5,
+.cardwrap h6,
+.cardwrap p {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: 0;
+}
+.card {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.card .left,
+.card .right {
+  display: table-cell;
+  vertical-align: top;
+}
+.card .right {
+  padding: 1em;
+}
+.card h1,
+.card h2 {
+  margin: 0.5em 0;
+}
+.card h1 {
+  font-size: 24px;
+  color: #707070;
+  font-weight: 200;
+  margin-top: 0;
+}
+.card .action {
+  color: #33b5e5;
+  text-decoration: none;
+}
+.card .section,
+.card .action {
+  border-top: 1px solid #DDDDDD;
+  display: block;
+  padding: 1em;
+}
+.card .section a,
+.card .action a {
+  color: #33b5e5;
+  text-decoration: none;
+}
+.card .image[src="images/none.gif"],
+.card .action:empty,
+.card .optional {
+  display: none;
+}
+.card .optional[display="true"] {
+  display: block;
+}
+.card .film:last-child:after {
+  content: '';
+}
+.card .film:after {
+  content: ',';
+}
+html,
+body,
+#map-canvas {
+  height: 100%;
+  font-family: 'Roboto', serif;
+}
+html,
+body,
+a,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: 0;
+  background: transparent;
+}
+body {
+  font-size: 13px;
+  color: #878787;
+  background: #F5F5F5;
+}
+select {
+  font-size: 0.9em;
+  color: #333;
+  margin: 10px;
+  margin-top: 20px;
+  width: 140px;
+  height: 24px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+a {
+  color: #33b5e5;
+  text-decoration: none;
+}
+#footer {
+  z-index: 99;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.7);
+}
+#footer h1 {
+  font-weight: 200;
+  font-size: 1.5em;
+}
+#footer div {
+  padding: 1em;
+}
+#footer #flash {
+  background: #fff;
+  padding: .5em 1em;
+}
+#footer #flash.error {
+  color: red;
+}
+#footer img {
+  position: absolute;
+  bottom: 1.5em;
+  right: 1em;
+}

@@ -1,0 +1,74 @@
+@import "card.less";
+
+// Temporary styles for debigging during development
+html, body, #map-canvas {
+  height: 100%;
+  font-family: 'Roboto', serif;
+}
+
+html,body,a,div,span,h1,h2,h3,h4,h5,h6,p {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  outline:0;
+  background:transparent;
+}
+
+
+body {
+  font-size: 13px;
+  color: #878787;
+  background: #F5F5F5;
+}
+
+select {
+  font-size:0.9em;
+  color: #333;
+  margin: 10px;
+  margin-top: 20px;
+  width: 140px;
+  height: 24px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+a {
+  color: #33b5e5;
+  text-decoration: none;
+}
+
+#footer {
+  z-index: 99;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.7);
+
+  h1 {
+    font-weight: 200;
+    font-size: 1.5em;
+  }
+
+  div {
+    padding: 1em;
+  }
+
+  #flash {
+    background: #fff;
+    padding: .5em 1em;
+
+    &.error {
+      color: red;
+    }
+  }
+
+  img {
+    position: absolute;
+    bottom: 1.5em;
+    right: 1em;
+  }
+}
