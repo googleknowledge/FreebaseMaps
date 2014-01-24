@@ -5,7 +5,7 @@ This is a sample app that combines geolocated entities from
 [Google Maps API](https://developers.google.com/maps/).
 
 You can see the deployed version on
-[googleknowledge.github.io/FreebaseMaps](googleknowledge.github.io/FreebaseMaps).
+[googleknowledge.github.io/FreebaseMaps](http://googleknowledge.github.io/FreebaseMaps).
 
 The app uses browser's geolocation feature to find user's location and displays
 a map of interesting objects that can be found nearby (within 50 000 ft).
